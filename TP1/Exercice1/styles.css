@@ -1,65 +1,91 @@
-/* Style général pour le document */
 body {
     font-family: "Times New Roman", Times, serif;
     font-size: 12pt;
-    color: #000;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
 }
 
-/* Chaque film en bloc séparé */
 film {
     display: block;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     margin: 20px 0;
-    padding: 10px;
-    background-color: #f9f9f9;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style pour le titre du film */
 film > titre {
     font-weight: bold;
-    font-size: 14pt;
-    color: #000;
+    font-size: 18pt;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
 }
 
-/* Style pour le réalisateur en rouge */
+film > duree, film > genre, film > langue {
+    color: #555;
+    font-size: 12pt;
+    margin-right: 10px;
+}
+
 film > realisateur {
-    color: red;
+    color: #d9534f;
     font-weight: bold;
 }
 
-/* Style pour l'année de production en rouge */
 film > annee {
-    color: red;
+    color: #d9534f;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
-/* Style pour les acteurs en bleu, italique, avec lien */
 film > acteurs > acteur {
-    color: blue;
+    color: #0275d8;
     font-style: italic;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+film > acteurs > acteur:hover {
     text-decoration: underline;
 }
 
-/* Style pour le résumé (description) */
 film > description {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
     padding: 10px;
-    background-color: #eef5ff;
-    border-left: 3px solid #5a9;
+    background-color: #e9f5ff;
+    border-left: 4px solid #5bc0de;
+    color: #555;
     font-style: italic;
+    font-size: 12pt;
+    line-height: 1.6;
+    border-radius: 4px;
 }
 
-/* Style pour les horaires */
 film > horaires {
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     border-top: 1px solid #ddd;
+    font-size: 12pt;
+    color: #666;
 }
 
 film > horaires > jour {
     font-weight: bold;
+    color: #333;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 film > horaires > jour > seance {
+    color: #0275d8;
+    background-color: #eef7ff;
+    padding: 3px 5px;
     margin: 0 5px;
+    border-radius: 4px;
+    font-weight: bold;
 }
