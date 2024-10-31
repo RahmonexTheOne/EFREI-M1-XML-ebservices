@@ -19,7 +19,7 @@
     <description>
         Les aventures du commissaire Valentin et des inspecteurs Terrasson et Pujol, membres des Brigades mobiles, corps spécial de la police française créé avant la Première Guerre mondiale.
     </description>
-    <séances>
+    <seances>
         <jour nom="Mer">
             <seance>14:00</seance>
             <seance>16:40</seance>
@@ -37,7 +37,7 @@
             <seance>19:40</seance>
             <seance>22:10</seance>
         </jour>
-    </séances>
+    </seances>
 </film>
 
 
