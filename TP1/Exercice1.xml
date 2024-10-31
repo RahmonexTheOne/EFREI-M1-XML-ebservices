@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="Exercice1.dtd" type="application/xml-dtd"?>
+<film>
+    <titre>Les Brigades du Tigre</titre>
+    <duree>2h 5min</duree>
+    <genre>Policier</genre>
+    <realisateur>Jérôme Cornuau</realisateur>
+    <langue>VF</langue>
+    <acteurs>
+        <acteur>C. Cornillac</acteur>
+        <acteur>D. Kruger</acteur>
+        <acteur>E. Baer</acteur>
+    </acteurs>
+    <annee>2005</annee>
+    <notes>
+        <presse>3/5</presse>
+        <spectateurs>4/5</spectateurs>
+    </notes>
+    <description>
+        Les aventures du commissaire Valentin et des inspecteurs Terrasson et Pujol, membres des Brigades mobiles, corps spécial de la police française créé avant la Première Guerre mondiale.
+    </description>
+    <séances>
+        <jour nom="Mer">
+            <seance>14:00</seance>
+            <seance>16:40</seance>
+            <seance>19:40</seance>
+            <seance>22:10</seance>
+        </jour>
+        <jour nom="Sam">
+            <seance>14:00</seance>
+            <seance>16:40</seance>
+            <seance>19:40</seance>
+            <seance>22:10</seance>
+        </jour>
+        <jour nom="Jeu">
+            <seance>14:00</seance>
+            <seance>19:40</seance>
+            <seance>22:10</seance>
+        </jour>
+    </séances>
+</film>
+
+
+<!-- Pour construire un document xml représentant l'ensemble du programme du cinéma :
+
+<programme>
+    <film>...</film>
+    <film>...</film>
+</programme>
+
+ -->
