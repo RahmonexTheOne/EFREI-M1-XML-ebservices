@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-model href="Exercice1.dtd" type="application/xml-dtd"?>
+<?xml-stylesheet href="styles.css" type="text/css"?>
 <film>
     <titre>Les Brigades du Tigre</titre>
     <duree>2h 5min</duree>

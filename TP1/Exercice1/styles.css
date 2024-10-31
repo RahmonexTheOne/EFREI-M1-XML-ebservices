@@ -1,0 +1,65 @@
+/* Style général pour le document */
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    color: #000;
+}
+
+/* Chaque film en bloc séparé */
+film {
+    display: block;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Style pour le titre du film */
+film > titre {
+    font-weight: bold;
+    font-size: 14pt;
+    color: #000;
+}
+
+/* Style pour le réalisateur en rouge */
+film > realisateur {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style pour l'année de production en rouge */
+film > annee {
+    color: red;
+}
+
+/* Style pour les acteurs en bleu, italique, avec lien */
+film > acteurs > acteur {
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Style pour le résumé (description) */
+film > description {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #eef5ff;
+    border-left: 3px solid #5a9;
+    font-style: italic;
+}
+
+/* Style pour les horaires */
+film > horaires {
+    margin-top: 10px;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+}
+
+film > horaires > jour {
+    font-weight: bold;
+}
+
+film > horaires > jour > seance {
+    margin: 0 5px;
+}
