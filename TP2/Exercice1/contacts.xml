@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="schema.xsd">
+    <contact type="personne">
+        <nom>Lee</nom>
+        <prenom>Bruce</prenom>
+        <telephone>0123456789</telephone>
+        <adresse>
+            <rue>10 Rue de Paris</rue>
+            <numero>75001</numero>
+            <ville>Paris</ville>
+            <code_postal>75001</code_postal>
+            <pays>France</pays>
+        </adresse>
+    </contact>
+    <contact type="entreprise">
+        <nom>TechCorp</nom>
+        <telephone>0987654321</telephone>
+        <adresse>
+            <rue>5 Avenue des Champs</rue>
+            <numero>75008</numero>
+            <ville>Paris</ville>
+            <code_postal>75008</code_postal>
+            <pays>France</pays>
+        </adresse>
+    </contact>
+    <contact type="personne">
+        <nom>Martin</nom>
+        <prenom>Claire</prenom>
+        <telephone>0112233445</telephone>
+        <adresse>
+            <rue>25 Rue de Lyon</rue>
+            <numero>69001</numero>
+            <ville>Lyon</ville>
+            <code_postal>69001</code_postal>
+            <pays>France</pays>
+        </adresse>
+    </contact>
+</contacts>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<expressions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="schema.xsd">
+
+    <!-- Exemple de (2 + 3) * 4 -->
+    <apply>
+        <times/>
+        <apply>
+            <plus/>
+            <cn>2</cn>
+            <cn>3</cn>
+        </apply>
+        <cn>4</cn>
+    </apply>
+
+    <!-- Exemple de 10 - (5 / 2) -->
+    <apply>
+        <minus/>
+        <cn>10</cn>
+        <apply>
+            <divide/>
+            <cn>5</cn>
+            <cn>2</cn>
+        </apply>
+    </apply>
+
+    <!-- Exemple de changement de signe (unaire) : -7 -->
+    <apply>
+        <minus/>
+        <cn>7</cn>
+    </apply>
+
+    <!-- Exemple de (8 // 3) + (4 * (6 - 1)) -->
+    <apply>
+        <plus/>
+        <apply>
+            <quotient/>
+            <cn>8</cn>
+            <cn>3</cn>
+        </apply>
+        <apply>
+            <times/>
+            <cn>4</cn>
+            <apply>
+                <minus/>
+                <cn>6</cn>
+                <cn>1</cn>
+            </apply>
+        </apply>
+    </apply>
+
+</expressions>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Définition de l'élément de valeur numérique <cn> -->
+    <xs:element name="cn" type="xs:decimal"/>
+
+    <!-- Définition des opérateurs vides avec nillable=true -->
+    <xs:element name="plus" nillable="true"/>
+    <xs:element name="times" nillable="true"/>
+    <xs:element name="divide" nillable="true"/>
+    <xs:element name="minus" nillable="true"/>
+    <xs:element name="quotient" nillable="true"/>
+
+    <!-- Définition de l'élément <apply> pour appliquer les opérations -->
+    <xs:element name="apply">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Choix de l'opérateur : un des éléments plus, times, divide, minus, ou quotient -->
+                <xs:choice>
+                    <xs:element ref="plus"/>
+                    <xs:element ref="times"/>
+                    <xs:element ref="divide"/>
+                    <xs:element ref="minus"/>
+                    <xs:element ref="quotient"/>
+                </xs:choice>
+
+                <!-- Opérandes : soit des éléments <cn>, soit des éléments <apply> imbriqués -->
+                <xs:choice maxOccurs="2" minOccurs="1">
+                    <xs:element ref="cn"/>
+                    <xs:element ref="apply"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
