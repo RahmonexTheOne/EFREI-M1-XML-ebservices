@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "codePerm": {
+        "type": "string",
+        "pattern": "^[A-Z]{3}[A-Z][0-9]{8}$"
+      },
+      "nom": { "type": "string" },
+      "prenom": { "type": "string" },
+      "cours": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "properties": {
+            "sigle": { "type": "string" },
+            "credits": { "type": "integer", "minimum": 0 },
+            "reprise": { "type": "boolean" }
+          },
+          "required": ["sigle", "credits"]
+        }
+      }
+    },
+    "required": ["codePerm", "nom", "prenom", "cours"],
+    "additionalProperties": false
+  }
+  

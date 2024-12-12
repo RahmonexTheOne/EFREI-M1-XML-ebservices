@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "facID": {
+        "type": "string",
+        "pattern": "^[0-9]{6}$"
+      },
+      "total": {
+        "type": "number",
+        "minimum": 0
+      }
+    },
+    "patternProperties": {
+      "^[A-Z][0-9]{3}$": {
+        "type": "object",
+        "properties": {
+          "nom": { "type": "string" },
+          "qt": { "type": "integer", "minimum": 1 },
+          "prix": { "type": "number", "minimum": 0 }
+        },
+        "required": ["nom", "qt", "prix"]
+      }
+    },
+    "required": ["facID", "total"],
+    "additionalProperties": false
+  }  

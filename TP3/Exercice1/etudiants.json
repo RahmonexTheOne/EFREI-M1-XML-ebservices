@@ -1,0 +1,50 @@
+{
+    "etudiants": [
+      {
+        "identifiant": 1,
+        "nom": "Mirabelle",
+        "prenom": "Marie",
+        "dateNaissance": "12/05/98",
+        "lieuNaissance": "Paris",
+        "adresse": {
+          "numRue": 12,
+          "nomRue": "Rue du XML",
+          "codePostal": "75002",
+          "ville": "Paris"
+        },
+        "mail": "marie.mirabelle@example.com",
+        "coursSuivis": ["Mathématiques", "Physique"]
+      },
+      {
+        "identifiant": 2,
+        "nom": "Martin",
+        "prenom": "Lucie",
+        "dateNaissance": "08/11/97",
+        "lieuNaissance": "Lyon",
+        "adresse": {
+          "numRue": 45,
+          "nomRue": "Avenue JSON",
+          "codePostal": "69003",
+          "ville": "Lyon"
+        },
+        "mail": "lucie.martin@example.com",
+        "coursSuivis": ["Biologie", "Chimie"]
+      },
+      {
+        "identifiant": 3,
+        "nom": "Durand",
+        "prenom": "Paul",
+        "dateNaissance": "23/03/99",
+        "lieuNaissance": "Marseille",
+        "adresse": {
+          "numRue": 10,
+          "nomRue": "Boulevard De Java",
+          "codePostal": "13008",
+          "ville": "Marseille"
+        },
+        "mail": "paul.durand@example.com",
+        "coursSuivis": ["Informatique", "Anglais"]
+      }
+    ]
+  }
+  
